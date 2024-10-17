@@ -67,9 +67,9 @@ class UserController extends Controller
             $user->username      = $validated['username'];
             $user->email         = $validated['email'];
             $user->password      = bcrypt($validated['password']);
-            if (isset($validated['code'])) {
-                $user->phone_code_id = $validated['code'];
-            }
+            //if (isset($validated['code'])) {
+              //  $user->phone_code_id = $validated['code'];
+            //}
             $user->phone         = $validated['phone'];
             if (isset($validated['city'])) {
                 $user->city_id       = $validated['city'];
